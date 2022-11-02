@@ -13,7 +13,7 @@ namespace SampleFunctionApp
         {
             builder.ConfigurationBuilder.AddAzureAppConfiguration(options =>
             {
-                options.Connect("Endpoint=https://adventhealth-app-config.azconfig.io;Id=X5EZ-l0-s0:wPQUTygmS1TaZAQ0332b;Secret=xdXSyd9ijW76rsNVs7Ck9eQPIGUWFKS54Gf21iulW2A=")
+                options.Connect(Environment.GetEnvironmentVariable("ConnectionString"))
                 .UseFeatureFlags();
             });
         }
