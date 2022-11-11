@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.FeatureManagement;
